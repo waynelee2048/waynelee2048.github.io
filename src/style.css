@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-user-drag: none;
+  -webkit-touch-callout:none;
+}
+body {
+  -webkit-overflow-scrolling: touch;
+  background: #f7ece3;
+}
+.wrap {
+  position: relative;
+  font-size: .4rem;
+  color: #7c6857;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+}
+.dec-layer img {
+  position: absolute;
+  top: 0;
+  width: 2rem;
+}
+.dec-layer .left {
+  left: 0;
+}
+.dec-layer .right {
+  right: 0;
+}
+.tit {
+  text-align: center;
+}
+.text-hd {
+  padding: .6rem .2rem 1rem;
+}
+.tex-upc {
+  text-transform:uppercase;
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 100%;
+}
+.info {
+  margin-top: .5rem;
+}
+.info-row {
+  padding: .5rem 0;
+  margin: 0 1rem;
+  border-top: 1px solid #d4c9bf;
+}
+.date {
+  font-size: .5rem;
+  letter-spacing: 0.02rem;
+}
+.adress {
+  display: flex;
+  justify-content: space-between;
+}
+.adress .text {
+  width:80%;
+}
+.adress .ic {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+}
+.schedule .item {
+  display: flex;
+}
+.schedule .item:not(:last-child) {
+  margin-bottom: .5rem;
+}
+.time {
+  margin-right: .3rem;
+}
+.st {
+  font-size: .35rem;
+  color: #f2844e;
+}
+.photo img {
+  width: 100%;
+}
+.dresscode {
+  text-align: center;
+}
+.dresscode img {
+  width: 80%;
+  padding: .5rem 0 1rem;
+}
+.footer {
+  font-size: .32rem;
+  padding: 1rem 0;
+  background: #edd8ca;
+  letter-spacing: 0.03rem;
+}
+.mp_nor {
+  display: none;
+}
+.mp_mob {
+  display: block;
+}
+/*當寬度介於 將載入下面這段 CSS */
+@media only screen and (min-width: 768px) and (max-width: 1980px) {
+  .header {
+    display: block;
+    height: 100vh;
+    width:auto;
+  }
+  .logo img {
+    width: 55%;
+  }
+  .text-hd {
+    padding-bottom: .6rem;
+  }
+  .cont-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .cont-wrap .info {
+    width: 60%;
+  }
+  .cont-wrap .photo {
+    width: 40%;
+    padding: 0 1rem;
+  }
+  .cont-wrap .info .info-row:first-child {
+    border-top: 0;
+  }
+  .dresscode img {
+    width: 50%;
+  }
+  .mp_nor {
+    display: block;
+  }
+  .mp_mob {
+    display: none;
+  }
+}
